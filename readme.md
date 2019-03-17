@@ -1,3 +1,3 @@
 # RPG
 
-A fun RPG made with Godot.
+A roleplaying game being made collaboratively.
