@@ -32,9 +32,11 @@ func movement_loop():
 		lastmotion = "r"
 	elif motion.y > 0:
 		$Sprite.play("walkd")
+		$Sprite.flip_h = false
 		lastmotion = "d"
 	elif motion.y < 0:
 		$Sprite.play("walku")
+		$Sprite.flip_h = false
 		lastmotion = "u"
 	else:
 		if lastmotion == "d":

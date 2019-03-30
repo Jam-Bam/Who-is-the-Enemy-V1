@@ -2,16 +2,16 @@
 
 [ext_resource path="res://KinematicBody2D.gd" type="Script" id=1]
 [ext_resource path="res://Sprites/Player/idle2.png" type="Texture" id=2]
-[ext_resource path="res://Sprites/Player/down0.png" type="Texture" id=3]
-[ext_resource path="res://Sprites/Player/down1.png" type="Texture" id=4]
-[ext_resource path="res://Sprites/Player/side0.png" type="Texture" id=5]
-[ext_resource path="res://Sprites/Player/side1.png" type="Texture" id=6]
-[ext_resource path="res://Sprites/Player/side2.png" type="Texture" id=7]
-[ext_resource path="res://Sprites/Player/side3.png" type="Texture" id=8]
-[ext_resource path="res://Sprites/Player/idle0.png" type="Texture" id=9]
-[ext_resource path="res://Sprites/Player/idle1.png" type="Texture" id=10]
-[ext_resource path="res://Sprites/Player/up0.png" type="Texture" id=11]
-[ext_resource path="res://Sprites/Player/up1.png" type="Texture" id=12]
+[ext_resource path="res://Sprites/Player/idle0.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Player/down0.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/Player/down1.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/Player/side0.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/Player/side1.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/Player/side2.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/Player/side3.png" type="Texture" id=9]
+[ext_resource path="res://Sprites/Player/up0.png" type="Texture" id=10]
+[ext_resource path="res://Sprites/Player/up1.png" type="Texture" id=11]
+[ext_resource path="res://Sprites/Player/idle1.png" type="Texture" id=12]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -20,29 +20,29 @@ animations = [ {
 "name": "idleu",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 3 ), ExtResource( 4 ) ],
-"loop": true,
-"name": "walkd",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ) ],
-"loop": true,
-"name": "walks",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 9 ) ],
+"frames": [ ExtResource( 3 ) ],
 "loop": true,
 "name": "idled",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 10 ) ],
+"frames": [ ExtResource( 4 ), ExtResource( 5 ) ],
 "loop": true,
-"name": "idles",
+"name": "walkd",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 11 ), ExtResource( 12 ) ],
+"frames": [ ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "walks",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 10 ), ExtResource( 11 ) ],
 "loop": true,
 "name": "walku",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 12 ) ],
+"loop": true,
+"name": "idles",
 "speed": 5.0
 } ]
 
