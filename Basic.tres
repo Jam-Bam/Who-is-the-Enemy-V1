@@ -5,49 +5,49 @@
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 8, 8 )
 
-[sub_resource type="RectangleShape2D" id=5]
+[sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 8, 2 )
 
-[sub_resource type="SegmentShape2D" id=7]
+[sub_resource type="SegmentShape2D" id=3]
 a = Vector2( 6, 0 )
 b = Vector2( -5, 10 )
+
+[sub_resource type="StreamTexture" id=4]
+load_path = "res://.import/BG.png-3f0ca7a7da1469a0e1662c097a2ee342.stex"
+
+[sub_resource type="SegmentShape2D" id=5]
+a = Vector2( 10, 1 )
+b = Vector2( -6, 1 )
 
 [sub_resource type="StreamTexture" id=6]
 load_path = "res://.import/BG.png-3f0ca7a7da1469a0e1662c097a2ee342.stex"
 
-[sub_resource type="SegmentShape2D" id=9]
-a = Vector2( 10, 1 )
+[sub_resource type="SegmentShape2D" id=7]
+a = Vector2( 5, 12 )
 b = Vector2( -6, 1 )
 
 [sub_resource type="StreamTexture" id=8]
 load_path = "res://.import/BG.png-3f0ca7a7da1469a0e1662c097a2ee342.stex"
 
+[sub_resource type="SegmentShape2D" id=9]
+a = Vector2( -6, 17 )
+b = Vector2( -6, 1 )
+
+[sub_resource type="SegmentShape2D" id=10]
+a = Vector2( -6, 17 )
+b = Vector2( -6, 1 )
+
 [sub_resource type="SegmentShape2D" id=11]
-a = Vector2( 5, 12 )
-b = Vector2( -6, 1 )
-
-[sub_resource type="StreamTexture" id=10]
-load_path = "res://.import/BG.png-3f0ca7a7da1469a0e1662c097a2ee342.stex"
-
-[sub_resource type="SegmentShape2D" id=12]
-a = Vector2( -6, 17 )
-b = Vector2( -6, 1 )
-
-[sub_resource type="SegmentShape2D" id=13]
-a = Vector2( -6, 17 )
-b = Vector2( -6, 1 )
-
-[sub_resource type="SegmentShape2D" id=14]
 a = Vector2( 5, 11 )
 b = Vector2( 16, 0 )
 
-[sub_resource type="RectangleShape2D" id=3]
+[sub_resource type="RectangleShape2D" id=12]
 extents = Vector2( 8, 2 )
 
-[sub_resource type="StreamTexture" id=2]
+[sub_resource type="StreamTexture" id=13]
 load_path = "res://.import/BG.png-3f0ca7a7da1469a0e1662c097a2ee342.stex"
 
-[sub_resource type="RectangleShape2D" id=4]
+[sub_resource type="RectangleShape2D" id=14]
 extents = Vector2( 8, 2 )
 
 [resource]
@@ -174,7 +174,7 @@ extents = Vector2( 8, 2 )
 } ]
 7/z_index = 0
 8/name = "8"
-8/texture = SubResource( 2 )
+8/texture = SubResource( 13 )
 8/tex_offset = Vector2( 0, 0 )
 8/modulate = Color( 1, 1, 1, 1 )
 8/region = Rect2( 32, 32, 16, 16 )
@@ -185,7 +185,7 @@ extents = Vector2( 8, 2 )
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 3 ),
+"shape": SubResource( 12 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 8, 2 )
 } ]
 8/z_index = 0
@@ -201,7 +201,7 @@ extents = Vector2( 8, 2 )
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 4 ),
+"shape": SubResource( 14 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 8, 2 )
 } ]
 9/z_index = 0
@@ -217,7 +217,7 @@ extents = Vector2( 8, 2 )
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 5 ),
+"shape": SubResource( 2 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 8, 2 )
 } ]
 10/z_index = 0
@@ -312,7 +312,7 @@ extents = Vector2( 8, 2 )
 19/shapes = [  ]
 19/z_index = 0
 20/name = "20"
-20/texture = SubResource( 6 )
+20/texture = SubResource( 4 )
 20/tex_offset = Vector2( 0, 0 )
 20/modulate = Color( 1, 1, 1, 1 )
 20/region = Rect2( 80, 48, 16, 16 )
@@ -323,12 +323,12 @@ extents = Vector2( 8, 2 )
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 7 ),
+"shape": SubResource( 3 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 10, 6 )
 } ]
 20/z_index = 0
 21/name = "21"
-21/texture = SubResource( 8 )
+21/texture = SubResource( 6 )
 21/tex_offset = Vector2( 0, 0 )
 21/modulate = Color( 1, 1, 1, 1 )
 21/region = Rect2( 96, 48, 16, 16 )
@@ -339,12 +339,12 @@ extents = Vector2( 8, 2 )
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 9 ),
+"shape": SubResource( 5 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 6, 6 )
 } ]
 21/z_index = 0
 22/name = "22"
-22/texture = SubResource( 10 )
+22/texture = SubResource( 8 )
 22/tex_offset = Vector2( 0, 0 )
 22/modulate = Color( 1, 1, 1, 1 )
 22/region = Rect2( 112, 48, 16, 16 )
@@ -355,7 +355,7 @@ extents = Vector2( 8, 2 )
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 11 ),
+"shape": SubResource( 7 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 6, 5 )
 } ]
 22/z_index = 0
@@ -371,7 +371,7 @@ extents = Vector2( 8, 2 )
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 12 ),
+"shape": SubResource( 9 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 11, -1 )
 } ]
 23/z_index = 0
@@ -403,13 +403,13 @@ extents = Vector2( 8, 2 )
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 13 ),
+"shape": SubResource( 10 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 17, -1 )
 }, {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 13 ),
+"shape": SubResource( 10 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 17, -1 )
 } ]
 25/z_index = 0
@@ -425,7 +425,7 @@ extents = Vector2( 8, 2 )
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 11 ),
+"shape": SubResource( 7 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 11, -1 )
 } ]
 26/z_index = 0
@@ -441,7 +441,7 @@ extents = Vector2( 8, 2 )
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 9 ),
+"shape": SubResource( 5 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 6, 10 )
 } ]
 27/z_index = 0
@@ -457,7 +457,7 @@ extents = Vector2( 8, 2 )
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 14 ),
+"shape": SubResource( 11 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, -5, 0 )
 } ]
 28/z_index = 0
