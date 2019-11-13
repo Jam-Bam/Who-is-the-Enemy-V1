@@ -461,4 +461,3 @@ extents = Vector2( 8, 2 )
 "shape_transform": Transform2D( 1, 0, 0, 1, -5, 0 )
 } ]
 28/z_index = 0
-

@@ -3,7 +3,7 @@
 [ext_resource path="res://Basic.tres" type="TileSet" id=1]
 [ext_resource path="res://Music/The Adventure Begins 8-bit remix.ogg" type="AudioStream" id=2]
 [ext_resource path="res://NPC.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Player.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Upper.tres" type="TileSet" id=5]
 
 [node name="Node" type="Node"]
@@ -43,4 +43,3 @@ margin_bottom = 40.0
 [node name="CenterContainer" type="CenterContainer" parent="CanvasLayer/Control/Container"]
 margin_right = 40.0
 margin_bottom = 40.0
-
