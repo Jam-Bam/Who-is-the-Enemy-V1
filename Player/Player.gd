@@ -3,10 +3,16 @@ extends KinematicBody2D
 const SPEED = 70
 var movedir = Vector2(0,0)
 var lastmotion
+var canAsk = false
+var currentNPC
+signal follow
 
 func _physics_process(delta):
 	controls_loop()
 	movement_loop()
+	if Input.is_action_just_pressed("ask") and canAsk:
+		print(currentNPC)
+	
 
 
 func controls_loop():
@@ -50,3 +56,14 @@ func movement_loop():
 			$Sprite.play("idles")
 			$Sprite.flip_h = true
 		
+
+func _on_NPCdetection_body_entered(body):
+	if body.is_in_group("NPC"):
+		currentNPC = body.get_index()
+		canAsk = true
+
+
+func _on_NPCdetection_body_exited(body):
+	if body.is_in_group("NPC"):
+		currentNPC = null
+		canAsk = false
