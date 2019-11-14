@@ -1,3 +1,3 @@
-# Advent of Schiz
+# Schiz
 
 An experimental game being made collaboratively.
