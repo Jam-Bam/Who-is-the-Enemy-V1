@@ -112,4 +112,3 @@ region_enabled = true
 region_rect = Rect2( 64, 32, 16, 16 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="9"]
-
