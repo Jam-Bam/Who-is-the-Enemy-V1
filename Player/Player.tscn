@@ -1,10 +1,10 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://Player/KinematicBody2D.gd" type="Script" id=1]
 [ext_resource path="res://Sprites/Player/idle0.png" type="Texture" id=2]
-[ext_resource path="res://Sprites/Player/down0.png" type="Texture" id=3]
-[ext_resource path="res://Sprites/Player/down1.png" type="Texture" id=4]
-[ext_resource path="res://Sprites/Player/idle2.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/Player/idle2.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Player/down0.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/Player/down1.png" type="Texture" id=5]
 [ext_resource path="res://Sprites/Player/idle1.png" type="Texture" id=6]
 [ext_resource path="res://Sprites/Player/up0.png" type="Texture" id=7]
 [ext_resource path="res://Sprites/Player/up1.png" type="Texture" id=8]
@@ -12,6 +12,8 @@
 [ext_resource path="res://Sprites/Player/side1.png" type="Texture" id=10]
 [ext_resource path="res://Sprites/Player/side2.png" type="Texture" id=11]
 [ext_resource path="res://Sprites/Player/side3.png" type="Texture" id=12]
+[ext_resource path="res://Player/Population.gd" type="Script" id=13]
+[ext_resource path="res://Player/Honor.gd" type="Script" id=14]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -20,14 +22,14 @@ animations = [ {
 "name": "idled",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 3 ), ExtResource( 4 ) ],
-"loop": true,
-"name": "walkd",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 5 ) ],
+"frames": [ ExtResource( 3 ) ],
 "loop": true,
 "name": "idleu",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "walkd",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 6 ) ],
@@ -65,6 +67,27 @@ shape = SubResource( 2 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2( 8, 8 )
+z_index = 1
 current = true
 drag_margin_h_enabled = false
 drag_margin_v_enabled = false
+
+[node name="Population" type="Label" parent="Camera2D"]
+margin_left = -116.931
+margin_top = -63.8642
+margin_right = -75.9312
+margin_bottom = -49.8642
+custom_colors/font_color = Color( 0.913725, 0.0705882, 0.0705882, 1 )
+text = "Population: 100"
+script = ExtResource( 13 )
+
+[node name="Honor" type="Label" parent="Camera2D"]
+margin_left = 38.3729
+margin_top = -63.9083
+margin_right = 117.373
+margin_bottom = -49.9083
+custom_colors/font_color = Color( 0.0705882, 0.737255, 0.913725, 1 )
+text = "Honor: 1000"
+script = ExtResource( 14 )
+[connection signal="ready" from="Camera2D/Population" to="Camera2D/Population" method="_on_Label_ready"]
+[connection signal="ready" from="Camera2D/Honor" to="Camera2D/Honor" method="_on_Label_ready"]
