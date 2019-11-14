@@ -1,7 +1,7 @@
 extends KinematicBody2D
 
 const SPEED = 70
-const movedir = Vector2(0,0)
+var movedir = Vector2(0,0)
 var lastmotion
 
 func _physics_process(delta):

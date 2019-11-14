@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Music/The Adventure Begins 8-bit remix.ogg" type="AudioStream" id=1]
-[ext_resource path="res://Sprites/Tiles/city.tres" type="TileSet" id=2]
-[ext_resource path="res://NPC.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Tiles/city.tres" type="TileSet" id=2]
+[ext_resource path="res://NPCs/NPC.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=4]
 
 [node name="Node" type="Node"]
@@ -22,17 +22,3 @@ position = Vector2( 328, 64 )
 
 [node name="KinematicBody2D" parent="." instance=ExtResource( 4 )]
 position = Vector2( 328, 80 )
-
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="Control" type="Control" parent="CanvasLayer"]
-margin_right = 40.0
-margin_bottom = 40.0
-
-[node name="Container" type="Container" parent="CanvasLayer/Control"]
-margin_right = 40.0
-margin_bottom = 40.0
-
-[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer/Control/Container"]
-margin_right = 40.0
-margin_bottom = 40.0
