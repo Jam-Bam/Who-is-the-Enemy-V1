@@ -1,3 +1,3 @@
 # Advent of Schiz
 
-A roleplaying game being made collaboratively.
+An experimental game being made collaboratively.
