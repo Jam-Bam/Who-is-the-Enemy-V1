@@ -17,12 +17,17 @@ _global_script_class_icons={
 
 config/name="RPG"
 run/main_scene="res://Base.tscn"
-config/icon="res://Sprites/icon.png"
+
+[autoload]
+
+dir="*res://CodeFolder/directions.gd"
 
 [display]
 
 window/size/width=240
 window/size/height=135
+window/size/borderless=true
+window/size/fullscreen=true
 window/size/test_width=960
 window/size/test_height=540
 window/dpi/allow_hidpi=true
@@ -101,4 +106,3 @@ HonorSubtract={
 [rendering]
 
 quality/2d/use_pixel_snap=true
-environment/default_environment="res://default_env.tres"
